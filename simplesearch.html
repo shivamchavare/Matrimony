@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Simple Search</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h2 class="logo"><a href="index.html">Patankar Vivaah Sanstha</a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+ 
+    <nav id="navbar" class="navbar" >
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html" style="font-size: 17px;">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html" style="font-size: 17px;">About</a></li>
+          <li><a class="nav-link scrollto" href="terms.html" style="font-size: 17px;">Terms</a></li>
+          <li class="dropdown"><a href="#" style="font-size: 16px;" ><span>Search Profiles</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#myModal">Search By Id</a></li>
+              
+              
+              <li><a href="simplesearch.html">Simple Search</a></li>
+              <li><a href="offlinebiodata.html">Offline Biodata</a></li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="Contact.html" style="font-size: 17px;">Contact</a></li>
+          <li><a class="nav-link scrollto " href="login.html" style="font-size: 17px;">Login</a></li>
+          <li><a class="nav-link scrollto" href="inner-page" style="font-size: 17px;">Register</a></li>
+          <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+            
+            <!--Modal-->
+  <div class="modal fade"  data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Search By Profile ID</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="">
+          <div class="form-group"> 
+            <input type="text" class="form-control" id="id_profile" name="id_profile" placeholder="Enter profile id">
+          </div>
+          <div class="form-group in">
+             <center><button type="submit" class="btn  btn-block" style="background-color:#ed502e; color: #fff; "><i class="fa fa-search" ></i> Search</button></center>
+          </div>
+        </form>
+        <div class="modal-footer">
+        <button type="button" class="btn " data-bs-dismiss="modal" style="background-color:whitesmoke; color: #000; border: 2px solid red;">Close</button>
+      </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!--Modal End-->
+ 
+
+         <section >
+          <div class="jumbotron mt-5">
+            <div class="container" data-aos="fade-up">
+
+          <!-- Page Heading -->
+ <div class="section-title" style="padding-top: 30px;">
+          <h2>Search</h2>
+          <p>Simple Search<p>
+        </div>    <div class="card" >
+  <div class="card-body">
+ <form method="post" action="">
+  <div class="form-group row">
+    <label for="inputEmail3" class="col-sm-2 col-form-label">Gender</label>
+    <div class="col-sm-10 in">
+      <div class="custom-control custom-radio custom-control-inline ">
+  <input type="radio" id="male" name="gender" value="1" class="custom-control-input">
+  <label class="custom-control-label" for="male">Male</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="female" name="gender" value="2" class="custom-control-input">
+  <label class="custom-control-label" for="female">Female</label>
+</div>
+    </div>
+  </div>
+  <div class="form-group row ">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Marital Status</label>
+    <div class="col-sm-10 in">
+      <div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="unmarried" name="marital_status" value="1" class="custom-control-input">
+  <label class="custom-control-label" for="unmarried">Unmarried</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="widow" name="marital_status" value="2" class="custom-control-input">
+  <label class="custom-control-label" for="widow">Widow / Widower</label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="divorcee" name="marital_status" value="3" class="custom-control-input">
+  <label class="custom-control-label" for="divorcee">Divorcee</label>
+</div>
+
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="seperated" name="marital_status" value="4" class="custom-control-input">
+  <label class="custom-control-label" for="seperated">Seperated</label>
+</div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label in">Age</label>
+    <div class="col-sm-3 in">
+       <select name="age_from" id="age_from" class="form-control">
+            <option value="">-Select Age From-</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                            <option value="60">60</option>
+                            <option value="61">61</option>
+                            <option value="62">62</option>
+                            <option value="63">63</option>
+                            <option value="64">64</option>
+                            <option value="65">65</option>
+                            <option value="66">66</option>
+                            <option value="67">67</option>
+                            <option value="68">68</option>
+                            <option value="69">69</option>
+                            <option value="70">70</option>
+                   </select>
+    </div>
+    <div class="col-sm-3 in">
+       <select name="age_to" id="age_to" class="form-control">
+            <option value="">-Select Age To-</option>
+                            <option value="18">18</option>
+                            <option value="19">19</option>
+                            <option value="20">20</option>
+                            <option value="21">21</option>
+                            <option value="22">22</option>
+                            <option value="23">23</option>
+                            <option value="24">24</option>
+                            <option value="25">25</option>
+                            <option value="26">26</option>
+                            <option value="27">27</option>
+                            <option value="28">28</option>
+                            <option value="29">29</option>
+                            <option value="30">30</option>
+                            <option value="31">31</option>
+                            <option value="32">32</option>
+                            <option value="33">33</option>
+                            <option value="34">34</option>
+                            <option value="35">35</option>
+                            <option value="36">36</option>
+                            <option value="37">37</option>
+                            <option value="38">38</option>
+                            <option value="39">39</option>
+                            <option value="40">40</option>
+                            <option value="41">41</option>
+                            <option value="42">42</option>
+                            <option value="43">43</option>
+                            <option value="44">44</option>
+                            <option value="45">45</option>
+                            <option value="46">46</option>
+                            <option value="47">47</option>
+                            <option value="48">48</option>
+                            <option value="49">49</option>
+                            <option value="50">50</option>
+                            <option value="51">51</option>
+                            <option value="52">52</option>
+                            <option value="53">53</option>
+                            <option value="54">54</option>
+                            <option value="55">55</option>
+                            <option value="56">56</option>
+                            <option value="57">57</option>
+                            <option value="58">58</option>
+                            <option value="59">59</option>
+                            <option value="60">60</option>
+                            <option value="61">61</option>
+                            <option value="62">62</option>
+                            <option value="63">63</option>
+                            <option value="64">64</option>
+                            <option value="65">65</option>
+                            <option value="66">66</option>
+                            <option value="67">67</option>
+                            <option value="68">68</option>
+                            <option value="69">69</option>
+                            <option value="70">70</option>
+                   </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Height</label>
+    <div class="col-sm-3 in">
+        <select name="id_height_from" class="form-control" id="id_height_from">
+<option value="0">- Select height-</option>
+<option value="1">Below 4ft 6in</option>
+<option value="2">4ft 6in</option>
+<option value="3">4ft 7in</option>
+<option value="4">4ft 8in</option>
+<option value="5">4ft 9in</option>
+<option value="6">4ft 10in</option>
+<option value="7">4ft 11in</option>
+<option value="8">5ft</option>
+<option value="9">5ft 1in</option>
+<option value="10">5ft 2in</option>
+<option value="11">5ft 3in</option>
+<option value="12">5ft 4in</option>
+<option value="13">5ft 5in</option>
+<option value="14">5ft 6in</option>
+<option value="15">5ft 7in</option>
+<option value="16">5ft 8in</option>
+<option value="17">5ft 9in</option>
+<option value="18">5ft 10in</option>
+<option value="19">5ft 11in</option>
+<option value="20">6ft</option>
+<option value="21">6ft 1in</option>
+<option value="22">6ft 2in</option>
+<option value="23">6ft 3in</option>
+<option value="24">6ft 4in</option>
+<option value="25">6ft 5in</option>
+<option value="26">6ft 6in</option>
+<option value="27">6ft 7in</option>
+<option value="28">6ft 8in</option>
+<option value="29">6ft 9in</option>
+<option value="30">6ft 10in</option>
+<option value="31">6ft 11in</option>
+<option value="32">7ft</option>
+<option value="33">Above 7ft</option>
+</select>
+    </div>
+    <div class="col-sm-3 in">
+       <select name="id_height_to" class="form-control" id="id_height_to">
+<option value="0">- Select height-</option>
+<option value="1">Below 4ft 6in</option>
+<option value="2">4ft 6in</option>
+<option value="3">4ft 7in</option>
+<option value="4">4ft 8in</option>
+<option value="5">4ft 9in</option>
+<option value="6">4ft 10in</option>
+<option value="7">4ft 11in</option>
+<option value="8">5ft</option>
+<option value="9">5ft 1in</option>
+<option value="10">5ft 2in</option>
+<option value="11">5ft 3in</option>
+<option value="12">5ft 4in</option>
+<option value="13">5ft 5in</option>
+<option value="14">5ft 6in</option>
+<option value="15">5ft 7in</option>
+<option value="16">5ft 8in</option>
+<option value="17">5ft 9in</option>
+<option value="18">5ft 10in</option>
+<option value="19">5ft 11in</option>
+<option value="20">6ft</option>
+<option value="21">6ft 1in</option>
+<option value="22">6ft 2in</option>
+<option value="23">6ft 3in</option>
+<option value="24">6ft 4in</option>
+<option value="25">6ft 5in</option>
+<option value="26">6ft 6in</option>
+<option value="27">6ft 7in</option>
+<option value="28">6ft 8in</option>
+<option value="29">6ft 9in</option>
+<option value="30">6ft 10in</option>
+<option value="31">6ft 11in</option>
+<option value="32">7ft</option>
+<option value="33">Above 7ft</option>
+</select>
+    </div>
+  </div> 
+    <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Caste</label>
+    <div class="col-sm-6 in">
+        <select class="form-control" id="sub_caste" name="sub_caste">
+            <option value="">-Select Caste-</option>
+            <option value="Deshmukh">Deshmukh
+            </option>
+            <option value="96 Kuli">96 Kuli
+            </option>
+            <option value="Maratha">Maratha
+            </option>
+            <option value="kunbi">kunbi
+            </option>
+            <option value="Deshmukh Maratha">Deshmukh Maratha
+            </option>
+            <option value="96 Kuli Maratha">96 Kuli Maratha
+            </option>
+            <option value="Tirale kunbi">Tirale kunbi
+            </option>
+        </select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Occupation type</label>
+    <div class="col-sm-6 in">
+        <select class="form-control" name="occupation" id="occupation">
+            <option value="">-Select Occupation-</option>
+            <option value="No Service or Pursuing Education">No Service or Pursuing
+                Education</option>
+
+            <option value="Private Service">Private Service</option>
+
+            <option value="Own Business or Own Practice">Own Business or Own
+                Practice</option>
+
+            <option value="Government Service">Government Service</option>
+        </select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">Education type</label>
+    <div class="col-sm-6 in">
+      <select class="form-control" id="education" name="education">
+        <option value="">-Select Education-</option>
+        <option value="less than 10th std">less than 10th std
+        </option>
+        <option value="10th std">10th std
+        </option>
+        <option value="12th std">12th std
+        </option>
+        <option value="graduate">Graduate
+        </option>
+        <option value="post graduate">Post Graduate
+        </option>
+        <option value="engineer">Engineer
+        </option>
+        <option value="doctor">Doctor
+        </option>
+    </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">State</label>
+    <div class="col-sm-6 in">
+       <select name="id_state" class="form-control" id="id_state" onchange="filter_city(this.value)">
+<option value="0">- Select state -</option>
+<option value="31">Andaman and Nicobar Islands</option>
+<option value="6">Andra Pradesh</option>
+<option value="7">Arunachal Pradesh</option>
+<option value="8">Assam</option>
+<option value="9">Bihar</option>
+<option value="32">Chandigarh</option>
+<option value="10">Chhattisgarh</option>
+<option value="33">Dadar and Nagar Haveli</option>
+<option value="34">Daman and Diu</option>
+<option value="35">Delhi</option>
+<option value="3">Goa</option>
+<option value="4">Gujarat</option>
+<option value="11">Haryana</option>
+<option value="12">Himachal Pradesh</option>
+<option value="13">Jammu and Kashmir</option>
+<option value="14">Jharkhand</option>
+<option value="2">Karnataka</option>
+<option value="15">Kerala</option>
+<option value="36">Lakshadweep</option>
+<option value="16">Madhya Pradesh</option>
+<option value="1">Maharashtra</option>
+<option value="17">Manipur</option>
+<option value="18">Meghalaya</option>
+<option value="19">Mizoram</option>
+<option value="20">Nagaland</option>
+<option value="21">Odisha</option>
+<option value="37">Pondicherry</option>
+<option value="22">Punjab</option>
+<option value="23">Rajasthan</option>
+<option value="24">Sikkim</option>
+<option value="25">Tamil Nadu</option>
+<option value="5">Telangana</option>
+<option value="27">Tripura</option>
+<option value="28">Uttar Pradesh</option>
+<option value="29">Uttarakhand</option>
+<option value="30">West Bengal</option>
+</select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label for="inputPassword3" class="col-sm-2 col-form-label">District</label>
+    <div class="col-sm-6 in"  id="ajax_id_city">
+              <select name="id_city" class="form-control" id="id_city">
+<option value="0">- Select district -</option>
+</select>
+    </div>
+  </div> 
+  <div class="form-group row">
+    <div class="col-md-2"></div>
+    <div class="col-sm-10 in">
+      <button type="submit" class="btn btn-lg"  style="background-color: #ed502e; color: #fff;"><i class="fa fa-search"></i> Search</button>
+    </div>
+  </div>
+</form>
+    
+  </div>
+</div>
+
+    </div>
+    </div>
+    </section><!-- End Contact Section -->
+ 
+
+   <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Patankar Vivaah Sanstha</h3>
+              <p class="pb-3"><em></em></p>
+              <p>
+                2384, C Ward, Shanivar Peth, Sonya Maruti Chowk, Kolhapur. Pincode-416002<br><br>
+                <strong>Phone:</strong> 9421282827<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links" >
+            <h4 class="t">Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right t"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="terms.html">Terms</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="Contact.html">Contact</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="login.html">Login</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="inner-page.html">Register</a></li>
+            </ul>
+          </div>
+
+          
+
+          <div class="col-lg-5 col-md-6 footer-newsletter">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15286.17278554911!2d74.2210507!3d16.6997272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b08d2fa3b1b91dd!2sPatankar%20Vivah%20Sanstha!5e0!3m2!1sen!2sin!4v1644582305522!5m2!1sen!2sin" width="460" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Patankar Vivaah Sanstha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+       
+        Designed by <a href="https://www.revolutionit.in/" target="_blank">Revoution IT</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<style type="text/css">
+  .t{
+    padding-left: 90px;
+  }
+  .txt{
+    padding-top: 40px;
+  }
+  .in{
+    padding-top: 20px;
+  }
+</style>
+</body>
+
+</html>

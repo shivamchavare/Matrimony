@@ -1,0 +1,1675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Register</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--  Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+
+  
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h2 class="logo"><a href="index.html">Patankar Vivaah Sanstha</a></h2>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+ 
+    <nav id="navbar" class="navbar" >
+        <ul>
+          <li><a class="nav-link scrollto active" href="index.html" style="font-size: 17px;">Home</a></li>
+          <li><a class="nav-link scrollto" href="about.html" style="font-size: 17px;">About</a></li>
+          <li><a class="nav-link scrollto" href="terms.html" style="font-size: 17px;">Terms</a></li>
+          <li class="dropdown"><a href="#" style="font-size: 16px;" ><span>Search Profiles</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#" data-bs-toggle="modal" data-bs-target="#myModal">Search By Id</a></li>
+              
+              
+              <li><a href="simplesearch.html">Simple Search</a></li>
+              <li><a href="offlinebiodata.html">Offline Biodata</a></li>
+              
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="Contact.html" style="font-size: 17px;">Contact</a></li>
+          <li><a class="nav-link scrollto " href="login.html" style="font-size: 17px;">Login</a></li>
+          <li><a class="nav-link scrollto" href="inner-page.html" style="font-size: 17px;">Register</a></li>
+          <!--<li><a class="getstarted scrollto" href="#about">Get Started</a></li>-->
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+    <!--Modal-->
+  <div class="modal fade"  data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" id="myModal">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Search By Profile ID</h5>
+       <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form method="post" action="">
+          <div class="form-group"> 
+            <input type="text" class="form-control" id="id_profile" name="id_profile" placeholder="Enter profile id">
+          </div>
+          <div class="form-group in">
+             <center><button type="submit" class="btn  btn-block" style="background-color:#ed502e; color: #fff; "><i class="fa fa-search" ></i> Search</button></center>
+          </div>
+        </form>
+        <div class="modal-footer">
+        <button type="button" class="btn " data-bs-dismiss="modal" style="background-color:whitesmoke; color: #000; border: 2px solid red;">Close</button>
+      </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<!--Modal End-->
+ 
+  <main id="main">
+
+   
+
+    <section>
+    <div class="jumbotron mt-5 bg-light">
+<div class="container">
+
+    <!-- Page Heading -->
+ <div class="section-title" style="padding-top: 30px;">
+          <h2>Register</h2>
+          <p>Register Profile<p>
+        </div>
+
+<small><span class="text-danger">*</span> indicates fields are compulsory.</small>
+    <div class="row">
+
+        <div class="col-lg-12" data-aos="fade-up">
+                        
+            <form action="http://marathilagnsanstha.com/home/register_post" method="post" id="accordionExample">
+
+                <div class="card shadow mb-4">
+                      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        1 . Personal Details
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="first_name" class="col-sm-4 col-form-label">First Name <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="first_name" id="first_name"
+                                                placeholder="First Name" required value="">
+                                                                                        </div>
+                                        
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="middle_name" class="col-sm-4 col-form-label">Middle Name <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="middle_name" id="middle_name"
+                                                placeholder="Middle Name" required value="">
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="last_name" class="col-sm-4 col-form-label">Last Name <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="last_name" id="last_name"
+                                                placeholder="Last Name" required value="">
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="gender" class="col-sm-4 col-form-label">Gender <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="gender" id="gender" required>
+                                                <option value="">-Select Gender-
+                                                </option>
+                                                <option value="1"  >
+                                                    Male</option>
+                                                <option value="2"  >
+                                                    Female</option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="dob" class="col-sm-4 col-form-label">Date of Birth <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <div class="form-row in">
+                                                <div class="col-md-4 in">
+                                                    <select class="form-control" name="day" id="dob" required>
+                                                        <option value="">DD
+                                                        </option>
+                                                                                                                <option value="01"  >
+                                                            01</option>
+                                                                                                                <option value="02"  >
+                                                            02</option>
+                                                                                                                <option value="03"  >
+                                                            03</option>
+                                                                                                                <option value="04"  >
+                                                            04</option>
+                                                                                                                <option value="05"  >
+                                                            05</option>
+                                                                                                                <option value="06"  >
+                                                            06</option>
+                                                                                                                <option value="07"  >
+                                                            07</option>
+                                                                                                                <option value="08"  >
+                                                            08</option>
+                                                                                                                <option value="09"  >
+                                                            09</option>
+                                                                                                                <option value="10"  >
+                                                            10</option>
+                                                                                                                <option value="11"  >
+                                                            11</option>
+                                                                                                                <option value="12"  >
+                                                            12</option>
+                                                                                                                <option value="13"  >
+                                                            13</option>
+                                                                                                                <option value="14"  >
+                                                            14</option>
+                                                                                                                <option value="15"  >
+                                                            15</option>
+                                                                                                                <option value="16"  >
+                                                            16</option>
+                                                                                                                <option value="17"  >
+                                                            17</option>
+                                                                                                                <option value="18"  >
+                                                            18</option>
+                                                                                                                <option value="19"  >
+                                                            19</option>
+                                                                                                                <option value="20"  >
+                                                            20</option>
+                                                                                                                <option value="21"  >
+                                                            21</option>
+                                                                                                                <option value="22"  >
+                                                            22</option>
+                                                                                                                <option value="23"  >
+                                                            23</option>
+                                                                                                                <option value="24"  >
+                                                            24</option>
+                                                                                                                <option value="25"  >
+                                                            25</option>
+                                                                                                                <option value="26"  >
+                                                            26</option>
+                                                                                                                <option value="27"  >
+                                                            27</option>
+                                                                                                                <option value="28"  >
+                                                            28</option>
+                                                                                                                <option value="29"  >
+                                                            29</option>
+                                                                                                                <option value="30"  >
+                                                            30</option>
+                                                                                                                <option value="31"  >
+                                                            31</option>
+                                                                                                            </select>
+                                                </div>
+                                                <div class="col-md-4 in">
+                                                    <select class="form-control " name="month" required>
+                                                        <option value="">MM
+                                                        </option>
+                                                                                                                <option value="01"  >
+                                                            01</option>
+                                                                                                                <option value="02"  >
+                                                            02</option>
+                                                                                                                <option value="03"  >
+                                                            03</option>
+                                                                                                                <option value="04"  >
+                                                            04</option>
+                                                                                                                <option value="05"  >
+                                                            05</option>
+                                                                                                                <option value="06"  >
+                                                            06</option>
+                                                                                                                <option value="07"  >
+                                                            07</option>
+                                                                                                                <option value="08"  >
+                                                            08</option>
+                                                                                                                <option value="09"  >
+                                                            09</option>
+                                                                                                                <option value="10"  >
+                                                            10</option>
+                                                                                                                <option value="11"  >
+                                                            11</option>
+                                                                                                                <option value="12"  >
+                                                            12</option>
+                                                                                                            </select>
+                                                </div>
+                                                <div class="col-md-4 in">
+                                                    <select class="form-control " name="year" required>
+                                                        <option value="">YYYY</option>
+                                                                                                                                                                        <option value="2004"   >2004</option>
+                                                                                                                <option value="2003"   >2003</option>
+                                                                                                                <option value="2002"   >2002</option>
+                                                                                                                <option value="2001"   >2001</option>
+                                                                                                                <option value="2000"   >2000</option>
+                                                                                                                <option value="1999"   >1999</option>
+                                                                                                                <option value="1998"   >1998</option>
+                                                                                                                <option value="1997"   >1997</option>
+                                                                                                                <option value="1996"   >1996</option>
+                                                                                                                <option value="1995"   >1995</option>
+                                                                                                                <option value="1994"   >1994</option>
+                                                                                                                <option value="1993"   >1993</option>
+                                                                                                                <option value="1992"   >1992</option>
+                                                                                                                <option value="1991"   >1991</option>
+                                                                                                                <option value="1990"   >1990</option>
+                                                                                                                <option value="1989"   >1989</option>
+                                                                                                                <option value="1988"   >1988</option>
+                                                                                                                <option value="1987"   >1987</option>
+                                                                                                                <option value="1986"   >1986</option>
+                                                                                                                <option value="1985"   >1985</option>
+                                                                                                                <option value="1984"   >1984</option>
+                                                                                                                <option value="1983"   >1983</option>
+                                                                                                                <option value="1982"   >1982</option>
+                                                                                                                <option value="1981"   >1981</option>
+                                                                                                                <option value="1980"   >1980</option>
+                                                                                                                <option value="1979"   >1979</option>
+                                                                                                                <option value="1978"   >1978</option>
+                                                                                                                <option value="1977"   >1977</option>
+                                                                                                                <option value="1976"   >1976</option>
+                                                                                                                <option value="1975"   >1975</option>
+                                                                                                                <option value="1974"   >1974</option>
+                                                                                                                <option value="1973"   >1973</option>
+                                                                                                                <option value="1972"   >1972</option>
+                                                                                                                <option value="1971"   >1971</option>
+                                                                                                                <option value="1970"   >1970</option>
+                                                                                                                <option value="1969"   >1969</option>
+                                                                                                                <option value="1968"   >1968</option>
+                                                                                                                <option value="1967"   >1967</option>
+                                                                                                                <option value="1966"   >1966</option>
+                                                                                                                <option value="1965"   >1965</option>
+                                                                                                                <option value="1964"   >1964</option>
+                                                                                                                <option value="1963"   >1963</option>
+                                                                                                                <option value="1962"   >1962</option>
+                                                                                                                <option value="1961"   >1961</option>
+                                                                                                                <option value="1960"   >1960</option>
+                                                                                                                <option value="1959"   >1959</option>
+                                                                                                                <option value="1958"   >1958</option>
+                                                                                                                <option value="1957"   >1957</option>
+                                                                                                                <option value="1956"   >1956</option>
+                                                                                                                <option value="1955"   >1955</option>
+                                                                                                                <option value="1954"   >1954</option>
+                                                                                                                <option value="1953"   >1953</option>
+                                                                                                                <option value="1952"   >1952</option>
+                                                                                                                <option value="1951"   >1951</option>
+                                                                                                                <option value="1950"   >1950</option>
+                                                                                                                <option value="1949"   >1949</option>
+                                                                                                                <option value="1948"   >1948</option>
+                                                                                                                <option value="1947"   >1947</option>
+                                                                                                                <option value="1946"   >1946</option>
+                                                                                                                <option value="1945"   >1945</option>
+                                                                                                                <option value="1944"   >1944</option>
+                                                                                                                <option value="1943"   >1943</option>
+                                                                                                                <option value="1942"   >1942</option>
+                                                                                                                <option value="1941"   >1941</option>
+                                                                                                                <option value="1940"   >1940</option>
+                                                                                                                <option value="1939"   >1939</option>
+                                                                                                                <option value="1938"   >1938</option>
+                                                                                                                <option value="1937"   >1937</option>
+                                                                                                                <option value="1936"   >1936</option>
+                                                                                                                <option value="1935"   >1935</option>
+                                                                                                                <option value="1934"   >1934</option>
+                                                                                                            </select> </div>
+                                                    
+                                            </div>
+                                                                                                                                                                            </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="sub_caste" class="col-sm-4 col-form-label">Sub
+                                            caste <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="sub_caste" name="sub_caste" required>
+                                                <option value="">Subcaste</option>
+                                                <option value="Deshmukh"  >Deshmukh
+                                                </option>
+                                                <option value="96 Kuli"  >96 Kuli
+                                                </option>
+                                                <option value="Maratha"  >Maratha
+                                                </option>
+                                                <option value="kunbi"  >kunbi
+                                                </option>
+                                                <option value="Deshmukh Maratha"  >Deshmukh Maratha
+                                                </option>
+                                                <option value="96 Kuli Maratha"  >96 Kuli Maratha
+                                                </option>
+                                                <option value="Tirale kunbi"  >Tirale kunbi
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="marital_status" class="col-sm-4 col-form-label">Marital
+                                            Status <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="marital_status" id="marital_status" required>
+                                                <option value="">Marital Status</option>
+                                                <option value="1"  >Unmarried</option>
+                                                <option value="2"  >Widow / Widower</option>
+                                                <option value="3"  >Divorcee</option>
+                                                <option value="4"  >Seperated</option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="id_height" class="col-sm-4 col-form-label">Height <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select name="id_height" class="form-control" id="id_height">
+<option value="0">- Select height-</option>
+<option value="1">Below 4ft 6in</option>
+<option value="2">4ft 6in</option>
+<option value="3">4ft 7in</option>
+<option value="4">4ft 8in</option>
+<option value="5">4ft 9in</option>
+<option value="6">4ft 10in</option>
+<option value="7">4ft 11in</option>
+<option value="8">5ft</option>
+<option value="9">5ft 1in</option>
+<option value="10">5ft 2in</option>
+<option value="11">5ft 3in</option>
+<option value="12">5ft 4in</option>
+<option value="13">5ft 5in</option>
+<option value="14">5ft 6in</option>
+<option value="15">5ft 7in</option>
+<option value="16">5ft 8in</option>
+<option value="17">5ft 9in</option>
+<option value="18">5ft 10in</option>
+<option value="19">5ft 11in</option>
+<option value="20">6ft</option>
+<option value="21">6ft 1in</option>
+<option value="22">6ft 2in</option>
+<option value="23">6ft 3in</option>
+<option value="24">6ft 4in</option>
+<option value="25">6ft 5in</option>
+<option value="26">6ft 6in</option>
+<option value="27">6ft 7in</option>
+<option value="28">6ft 8in</option>
+<option value="29">6ft 9in</option>
+<option value="30">6ft 10in</option>
+<option value="31">6ft 11in</option>
+<option value="32">7ft</option>
+<option value="33">Above 7ft</option>
+</select>
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="weight" class="col-sm-4 col-form-label">Weight (kg)
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="weight" id="weight" required>
+                                                <option  value="">-Select Weight-</option>
+                                                                                                <option value="30"    >30 Kg</option>
+                                                                                                <option value="31"    >31 Kg</option>
+                                                                                                <option value="32"    >32 Kg</option>
+                                                                                                <option value="33"    >33 Kg</option>
+                                                                                                <option value="34"    >34 Kg</option>
+                                                                                                <option value="35"    >35 Kg</option>
+                                                                                                <option value="36"    >36 Kg</option>
+                                                                                                <option value="37"    >37 Kg</option>
+                                                                                                <option value="38"    >38 Kg</option>
+                                                                                                <option value="39"    >39 Kg</option>
+                                                                                                <option value="40"    >40 Kg</option>
+                                                                                                <option value="41"    >41 Kg</option>
+                                                                                                <option value="42"    >42 Kg</option>
+                                                                                                <option value="43"    >43 Kg</option>
+                                                                                                <option value="44"    >44 Kg</option>
+                                                                                                <option value="45"    >45 Kg</option>
+                                                                                                <option value="46"    >46 Kg</option>
+                                                                                                <option value="47"    >47 Kg</option>
+                                                                                                <option value="48"    >48 Kg</option>
+                                                                                                <option value="49"    >49 Kg</option>
+                                                                                                <option value="50"    >50 Kg</option>
+                                                                                                <option value="51"    >51 Kg</option>
+                                                                                                <option value="52"    >52 Kg</option>
+                                                                                                <option value="53"    >53 Kg</option>
+                                                                                                <option value="54"    >54 Kg</option>
+                                                                                                <option value="55"    >55 Kg</option>
+                                                                                                <option value="56"    >56 Kg</option>
+                                                                                                <option value="57"    >57 Kg</option>
+                                                                                                <option value="58"    >58 Kg</option>
+                                                                                                <option value="59"    >59 Kg</option>
+                                                                                                <option value="60"    >60 Kg</option>
+                                                                                                <option value="61"    >61 Kg</option>
+                                                                                                <option value="62"    >62 Kg</option>
+                                                                                                <option value="63"    >63 Kg</option>
+                                                                                                <option value="64"    >64 Kg</option>
+                                                                                                <option value="65"    >65 Kg</option>
+                                                                                                <option value="66"    >66 Kg</option>
+                                                                                                <option value="67"    >67 Kg</option>
+                                                                                                <option value="68"    >68 Kg</option>
+                                                                                                <option value="69"    >69 Kg</option>
+                                                                                                <option value="70"    >70 Kg</option>
+                                                                                                <option value="71"    >71 Kg</option>
+                                                                                                <option value="72"    >72 Kg</option>
+                                                                                                <option value="73"    >73 Kg</option>
+                                                                                                <option value="74"    >74 Kg</option>
+                                                                                                <option value="75"    >75 Kg</option>
+                                                                                                <option value="76"    >76 Kg</option>
+                                                                                                <option value="77"    >77 Kg</option>
+                                                                                                <option value="78"    >78 Kg</option>
+                                                                                                <option value="79"    >79 Kg</option>
+                                                                                                <option value="80"    >80 Kg</option>
+                                                                                                <option value="81"    >81 Kg</option>
+                                                                                                <option value="82"    >82 Kg</option>
+                                                                                                <option value="83"    >83 Kg</option>
+                                                                                                <option value="84"    >84 Kg</option>
+                                                                                                <option value="85"    >85 Kg</option>
+                                                                                                <option value="86"    >86 Kg</option>
+                                                                                                <option value="87"    >87 Kg</option>
+                                                                                                <option value="88"    >88 Kg</option>
+                                                                                                <option value="89"    >89 Kg</option>
+                                                                                                <option value="90"    >90 Kg</option>
+                                                                                                <option value="91"    >91 Kg</option>
+                                                                                                <option value="92"    >92 Kg</option>
+                                                                                                <option value="93"    >93 Kg</option>
+                                                                                                <option value="94"    >94 Kg</option>
+                                                                                                <option value="95"    >95 Kg</option>
+                                                                                                <option value="96"    >96 Kg</option>
+                                                                                                <option value="97"    >97 Kg</option>
+                                                                                                <option value="98"    >98 Kg</option>
+                                                                                                <option value="99"    >99 Kg</option>
+                                                                                                <option value="100"    >100 Kg</option>
+                                                                                                <option value="101"    >101 Kg</option>
+                                                                                                <option value="102"    >102 Kg</option>
+                                                                                                <option value="103"    >103 Kg</option>
+                                                                                                <option value="104"    >104 Kg</option>
+                                                                                                <option value="105"    >105 Kg</option>
+                                                                                                <option value="106"    >106 Kg</option>
+                                                                                                <option value="107"    >107 Kg</option>
+                                                                                                <option value="108"    >108 Kg</option>
+                                                                                                <option value="109"    >109 Kg</option>
+                                                                                                <option value="110"    >110 Kg</option>
+                                                                                                <option value="111"    >111 Kg</option>
+                                                                                                <option value="112"    >112 Kg</option>
+                                                                                                <option value="113"    >113 Kg</option>
+                                                                                                <option value="114"    >114 Kg</option>
+                                                                                                <option value="115"    >115 Kg</option>
+                                                                                                <option value="116"    >116 Kg</option>
+                                                                                                <option value="117"    >117 Kg</option>
+                                                                                                <option value="118"    >118 Kg</option>
+                                                                                                <option value="119"    >119 Kg</option>
+                                                                                                <option value="120"    >120 Kg</option>
+                                                                                                <option value="121"    >121 Kg</option>
+                                                                                                <option value="122"    >122 Kg</option>
+                                                                                                <option value="123"    >123 Kg</option>
+                                                                                                <option value="124"    >124 Kg</option>
+                                                                                                <option value="125"    >125 Kg</option>
+                                                                                                <option value="126"    >126 Kg</option>
+                                                                                                <option value="127"    >127 Kg</option>
+                                                                                                <option value="128"    >128 Kg</option>
+                                                                                                <option value="129"    >129 Kg</option>
+                                                                                                <option value="130"    >130 Kg</option>
+                                                                                                <option value="131"    >131 Kg</option>
+                                                                                                <option value="132"    >132 Kg</option>
+                                                                                                <option value="133"    >133 Kg</option>
+                                                                                                <option value="134"    >134 Kg</option>
+                                                                                                <option value="135"    >135 Kg</option>
+                                                                                                <option value="136"    >136 Kg</option>
+                                                                                                <option value="137"    >137 Kg</option>
+                                                                                                <option value="138"    >138 Kg</option>
+                                                                                                <option value="139"    >139 Kg</option>
+                                                                                                <option value="140"    >140 Kg</option>
+                                                                                                <option value="141"    >141 Kg</option>
+                                                                                                <option value="142"    >142 Kg</option>
+                                                                                                <option value="143"    >143 Kg</option>
+                                                                                                <option value="144"    >144 Kg</option>
+                                                                                                <option value="145"    >145 Kg</option>
+                                                                                                <option value="146"    >146 Kg</option>
+                                                                                                <option value="147"    >147 Kg</option>
+                                                                                                <option value="148"    >148 Kg</option>
+                                                                                                <option value="149"    >149 Kg</option>
+                                                                                                <option value="150"    >150 Kg</option>
+                                                                                                <option value="151"    >151 Kg</option>
+                                                                                                <option value="152"    >152 Kg</option>
+                                                                                                <option value="153"    >153 Kg</option>
+                                                                                                <option value="154"    >154 Kg</option>
+                                                                                                <option value="155"    >155 Kg</option>
+                                                                                                <option value="156"    >156 Kg</option>
+                                                                                                <option value="157"    >157 Kg</option>
+                                                                                                <option value="158"    >158 Kg</option>
+                                                                                                <option value="159"    >159 Kg</option>
+                                                                                                <option value="160"    >160 Kg</option>
+                                                                                                <option value="161"    >161 Kg</option>
+                                                                                                <option value="162"    >162 Kg</option>
+                                                                                                <option value="163"    >163 Kg</option>
+                                                                                                <option value="164"    >164 Kg</option>
+                                                                                                <option value="165"    >165 Kg</option>
+                                                                                                <option value="166"    >166 Kg</option>
+                                                                                                <option value="167"    >167 Kg</option>
+                                                                                                <option value="168"    >168 Kg</option>
+                                                                                                <option value="169"    >169 Kg</option>
+                                                                                                <option value="170"    >170 Kg</option>
+                                                                                                <option value="171"    >171 Kg</option>
+                                                                                                <option value="172"    >172 Kg</option>
+                                                                                                <option value="173"    >173 Kg</option>
+                                                                                                <option value="174"    >174 Kg</option>
+                                                                                                <option value="175"    >175 Kg</option>
+                                                                                                <option value="176"    >176 Kg</option>
+                                                                                                <option value="177"    >177 Kg</option>
+                                                                                                <option value="178"    >178 Kg</option>
+                                                                                                <option value="179"    >179 Kg</option>
+                                                                                                <option value="180"    >180 Kg</option>
+                                                                                                <option value="181"    >181 Kg</option>
+                                                                                                <option value="182"    >182 Kg</option>
+                                                                                                <option value="183"    >183 Kg</option>
+                                                                                                <option value="184"    >184 Kg</option>
+                                                                                                <option value="185"    >185 Kg</option>
+                                                                                                <option value="186"    >186 Kg</option>
+                                                                                                <option value="187"    >187 Kg</option>
+                                                                                                <option value="188"    >188 Kg</option>
+                                                                                                <option value="189"    >189 Kg</option>
+                                                                                                <option value="190"    >190 Kg</option>
+                                                                                                <option value="191"    >191 Kg</option>
+                                                                                                <option value="192"    >192 Kg</option>
+                                                                                                <option value="193"    >193 Kg</option>
+                                                                                                <option value="194"    >194 Kg</option>
+                                                                                                <option value="195"    >195 Kg</option>
+                                                                                                <option value="196"    >196 Kg</option>
+                                                                                                <option value="197"    >197 Kg</option>
+                                                                                                <option value="198"    >198 Kg</option>
+                                                                                                <option value="199"    >199 Kg</option>
+                                                                                                <option value="200"    >200 Kg</option>
+                                                                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="blood_group" class="col-sm-4 col-form-label">Blood Group
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="blood_group" id="blood_group" required>
+                                                <option  value="">-Select Blood Group -</option>
+                                                <option value="A+"   >A+</option>
+                                                <option value="A-"   >A-</option>
+                                                <option value="B+"   >B+</option>
+                                                <option value="B-"   >B-</option>
+                                                <option value="AB+"   >AB+</option>
+                                                <option value="AB-"   >AB-</option>
+                                                <option value="O+"   >O+</option>
+                                                <option value="O-"   >O-</option>
+                                                <option value="Don't know"   >Don't Know</option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="complexion" class="col-sm-4 col-form-label">Complexion
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="complexion" id="complexion" required>
+                                                <option  value="">-Select Complexion-</option>
+                                                <option value="Very Fair"   >Very Fair</option>
+                                                <option value="Fair"   >Fair</option>
+                                                <option value="Wheatish"   >Wheatish</option>
+                                                <option value="Wheatish Medium"   >Wheatish Medium</option>
+                                                <option value="Wheatish Brown"   >Wheatish Brown</option>
+                                                <option value="Dark"   >Dark</option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="disability" class="col-sm-4 col-form-label">Physical
+                                            disabilities
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="disability" id="disability" required>
+                                                <option  value="">-Select Physical disabilities-</option>
+                                                <option value="1"   >No</option>
+                                                <option value="2"   >Yes</option>
+
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="disability_details" class="col-sm-4 col-form-label">Disabilities
+                                            details</label>
+                                        <div class="col-sm-6">
+                                            <textarea name="disability_details" name="disability_details"
+                                                id="disability_details" class="form-control" rows="4"
+                                                placeholder="If physical disability, specify"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 text-center">
+                                    <button class="btn btn-outline-danger btn-sm font-weight-bold" type="button" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                         <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        2 . Horoscope Details
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        
+                        <div class="card-body" id="horoscopeDetails">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="rashi" class="col-sm-4 col-form-label">Rashi <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="rashi" name="rashi"  required>
+                                                <option value="">-Select Rashi-</option>
+                                                <option value="Unspecified"  >Unspecified
+                                                </option>
+                                                <option value="Mesh"  >Mesh
+                                                </option>
+                                                <option value="Vrushabh"  >Vrushabh
+                                                </option>
+                                                <option value="Mithun"  >Mithun
+                                                </option>
+                                                <option value="Kark"  >Kark
+                                                </option>
+                                                <option value="Sinha"  >Sinha
+                                                </option>
+                                                <option value="Kanya"  >Kanya
+                                                </option>
+                                                <option value="Tula"  >Tula
+                                                </option>
+                                                <option value="Vrischik"  >Vrischik
+                                                </option>
+                                                <option value="Dhanu"  >Dhanu
+                                                </option>
+                                                <option value="Makar"  >Makar
+                                                </option>
+                                                <option value="Kumbh"  >Kumbh
+                                                </option>
+                                                <option value="Meen"  >Meen
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="nakshtra" class="col-sm-4 col-form-label">Nakshatra
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="nakshtra" name="nakshtra" required>
+                                                <option value="">-Select Nakshatra-</option>
+                                                <option value="Unspecified"  >Unspecified
+                                                </option>
+                                                <option value="Ashwini"  >Ashwini
+                                                </option>
+                                                <option value="Ardra"  >Ardra
+                                                </option>
+                                                <option value="Aslesha"  >Aslesha
+                                                </option>
+                                                <option value="Anuradha"  >Anuradha
+                                                </option>
+                                                <option value="Bharani"  >Bharani
+                                                </option>
+                                                <option value="Chitra"  >Chitra
+                                                </option>
+                                                <option value="Dhanishta"  >Dhanishta
+                                                </option>
+                                                <option value="Hasta"  >Hasta
+                                                </option>
+                                                <option value="Jyeshta"  >Jyeshta
+                                                </option>
+                                                <option value="Krittika"  >Krittika
+                                                </option>
+                                                <option value="Moola"  >Moola
+                                                </option>
+                                                <option value="Magha"  >Magha
+                                                </option>
+                                                <option value="Mrigasira"  >Mrigasira
+                                                </option>
+                                                <option value="Pushya"  >Pushya
+                                                </option>
+                                                <option value="Purva Phalgini"  >Purva Phalgini
+                                                </option>
+                                                <option value="Purva Bhadra"  >Purva Bhadra
+                                                </option>
+                                                <option value="Purva Shadha"  >Purva Shadha
+                                                </option>
+                                                <option value="Punarvasu"  >Punarvasu
+                                                </option>
+                                                <option value="Rohini"  >Rohini
+                                                </option>
+                                                <option value="Swati"  >Swati
+                                                </option>
+                                                <option value="Revati"  >Revati
+                                                </option>
+                                                <option value="Shattarka"  >Shattarka
+                                                </option>
+                                                <option value="Shravan"  >Shravan
+                                                </option>
+                                                <option value="Uttara Phalguni"  >Uttara Phalguni
+                                                </option>
+                                                <option value="Uttara Bhadra"  >Uttara Bhadra
+                                                </option>
+                                                <option value="Uttara Shadha"  >Uttara Shadha
+                                                </option>
+                                                <option value="Vishakha"  >Vishakha
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="charan" class="col-sm-4 col-form-label">Charan
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="charan" name="charan" required>
+                                                <option value="">-Select Charan-</option>
+                                                <option value="Unspecified"  >Unspecified
+                                                </option>
+                                                <option value="1"  >1
+                                                </option>
+                                                <option value="2"  >2
+                                                </option>
+                                                <option value="3"  >3
+                                                </option>
+                                                <option value="4"  >4
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="nadi" class="col-sm-4 col-form-label">Nadi <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="nadi" name="nadi" required>
+                                                <option value="">-Select Nadi-</option>
+                                                <option value="Unspecified"  >Unspecified
+                                                </option>
+                                                <option value="Adhya"  >Adhya
+                                                </option>
+                                                <option value="Madhya"  >Madhya
+                                                </option>
+                                                <option value="Antya"  >Antya
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="gan" class="col-sm-4 col-form-label">Gan <span
+                                                class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="gan" name="gan" required>
+                                                <option value="">-Select Gan-</option>
+                                                <option value="Unspecified"  >Unspecified
+                                                </option>
+                                                <option value="Dev Gan"  >Dev Gan
+                                                </option>
+                                                <option value="Manushya Gan"  >Manushya Gan
+                                                </option>
+                                                <option value="Rakshas Gan"  > Rakshas Gan
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="mangal" class="col-sm-4 col-form-label">Mangal
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="mangal" name="mangal" required>
+                                                <option value="">-Select Mangal-</option>
+                                                <option value="Yes"  >Yes
+                                                </option>
+                                                <option value="No"  >No
+                                                </option>
+                                                <option value="Saumya"  >Saumya
+                                                </option>
+                                                <option value="Nirdosh"  >Nirdosh
+                                                </option>
+                                                <option value="Not Known"  >Not Known
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="time" class="col-sm-4 col-form-label">Birth Time </label>
+                                        <div class="col-sm-6 in">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <select class="form-control" id="time" name="hour">
+                                                        <option value="">Hr</option>
+                                                                                                                <option value="01"   >
+                                                            01</option>
+                                                                                                                <option value="02"   >
+                                                            02</option>
+                                                                                                                <option value="03"   >
+                                                            03</option>
+                                                                                                                <option value="04"   >
+                                                            04</option>
+                                                                                                                <option value="05"   >
+                                                            05</option>
+                                                                                                                <option value="06"   >
+                                                            06</option>
+                                                                                                                <option value="07"   >
+                                                            07</option>
+                                                                                                                <option value="08"   >
+                                                            08</option>
+                                                                                                                <option value="09"   >
+                                                            09</option>
+                                                                                                                <option value="10"   >
+                                                            10</option>
+                                                                                                                <option value="11"   >
+                                                            11</option>
+                                                                                                                <option value="12"   >
+                                                            12</option>
+                                                                                                            </select>
+                                                </div>
+                                                <div class="col in ">
+                                                    <select class="form-control" name="minutes">
+                                                        <option  value="">Min</option>
+                                                                                                                <option value="00"  selected="selected" >
+                                                            00</option>
+                                                                                                                <option value="01"  >
+                                                            01</option>
+                                                                                                                <option value="02"  >
+                                                            02</option>
+                                                                                                                <option value="03"  >
+                                                            03</option>
+                                                                                                                <option value="04"  >
+                                                            04</option>
+                                                                                                                <option value="05"  >
+                                                            05</option>
+                                                                                                                <option value="06"  >
+                                                            06</option>
+                                                                                                                <option value="07"  >
+                                                            07</option>
+                                                                                                                <option value="08"  >
+                                                            08</option>
+                                                                                                                <option value="09"  >
+                                                            09</option>
+                                                                                                                <option value="10"  >
+                                                            10</option>
+                                                                                                                <option value="11"  >
+                                                            11</option>
+                                                                                                                <option value="12"  >
+                                                            12</option>
+                                                                                                                <option value="13"  >
+                                                            13</option>
+                                                                                                                <option value="14"  >
+                                                            14</option>
+                                                                                                                <option value="15"  >
+                                                            15</option>
+                                                                                                                <option value="16"  >
+                                                            16</option>
+                                                                                                                <option value="17"  >
+                                                            17</option>
+                                                                                                                <option value="18"  >
+                                                            18</option>
+                                                                                                                <option value="19"  >
+                                                            19</option>
+                                                                                                                <option value="20"  >
+                                                            20</option>
+                                                                                                                <option value="21"  >
+                                                            21</option>
+                                                                                                                <option value="22"  >
+                                                            22</option>
+                                                                                                                <option value="23"  >
+                                                            23</option>
+                                                                                                                <option value="24"  >
+                                                            24</option>
+                                                                                                                <option value="25"  >
+                                                            25</option>
+                                                                                                                <option value="26"  >
+                                                            26</option>
+                                                                                                                <option value="27"  >
+                                                            27</option>
+                                                                                                                <option value="28"  >
+                                                            28</option>
+                                                                                                                <option value="29"  >
+                                                            29</option>
+                                                                                                                <option value="30"  >
+                                                            30</option>
+                                                                                                                <option value="31"  >
+                                                            31</option>
+                                                                                                                <option value="32"  >
+                                                            32</option>
+                                                                                                                <option value="33"  >
+                                                            33</option>
+                                                                                                                <option value="34"  >
+                                                            34</option>
+                                                                                                                <option value="35"  >
+                                                            35</option>
+                                                                                                                <option value="36"  >
+                                                            36</option>
+                                                                                                                <option value="37"  >
+                                                            37</option>
+                                                                                                                <option value="38"  >
+                                                            38</option>
+                                                                                                                <option value="39"  >
+                                                            39</option>
+                                                                                                                <option value="40"  >
+                                                            40</option>
+                                                                                                                <option value="41"  >
+                                                            41</option>
+                                                                                                                <option value="42"  >
+                                                            42</option>
+                                                                                                                <option value="43"  >
+                                                            43</option>
+                                                                                                                <option value="44"  >
+                                                            44</option>
+                                                                                                                <option value="45"  >
+                                                            45</option>
+                                                                                                                <option value="46"  >
+                                                            46</option>
+                                                                                                                <option value="47"  >
+                                                            47</option>
+                                                                                                                <option value="48"  >
+                                                            48</option>
+                                                                                                                <option value="49"  >
+                                                            49</option>
+                                                                                                                <option value="50"  >
+                                                            50</option>
+                                                                                                                <option value="51"  >
+                                                            51</option>
+                                                                                                                <option value="52"  >
+                                                            52</option>
+                                                                                                                <option value="53"  >
+                                                            53</option>
+                                                                                                                <option value="54"  >
+                                                            54</option>
+                                                                                                                <option value="55"  >
+                                                            55</option>
+                                                                                                                <option value="56"  >
+                                                            56</option>
+                                                                                                                <option value="57"  >
+                                                            57</option>
+                                                                                                                <option value="58"  >
+                                                            58</option>
+                                                                                                                <option value="59"  >
+                                                            59</option>
+                                                                                                            </select>
+                                                </div>
+                                                <div class="col in">
+                                                    <select class="form-control" name="am_pm">
+                                                        <option  value="">AM/PM</option>
+                                                        <option value="AM"  >AM</option>
+                                                        <option value="PM"  >PM</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="birth_place" class="col-sm-4 col-form-label">Birth Place
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="birth_place" id="birth_place"
+                                                placeholder="Birth place" required value="">
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="devak" class="col-sm-4 col-form-label">Devak</label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" name="devak" placeholder="Devak"
+                                                id="devak" value="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 text-center in">
+                                    <button class="btn btn-outline-danger btn-sm font-weight-bold" type="button" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                       <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+      3 . Educational/Professional Details
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="education" class="col-sm-4 col-form-label">Education
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="education" name="education" required>
+                                                <option value="">-Select Education-</option>
+                                                <option value="less than 10th std"  >less than 10th std
+                                                </option>
+                                                <option value="10th std"  >10th std
+                                                </option>
+                                                <option value="12th std"  >12th std
+                                                </option>
+                                                <option value="graduate"  >Graduate
+                                                </option>
+                                                <option value="post graduate"  >Post Graduate
+                                                </option>
+                                                <option value="engineer"  >Engineer
+                                                </option>
+                                                <option value="doctor"  >Doctor
+                                                </option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="education_details" class="col-sm-4 col-form-label">Education
+                                            Details <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="education_details"
+                                                name="education_details" placeholder="Education details" required value="">
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="occupation" class="col-sm-4 col-form-label">Occupation
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="occupation" id="occupation" required>
+                                                <option  value="">-Select Occupation-</option>
+                                                <option value="No Service or Pursuing Education"  >No Service or Pursuing
+                                                    Education</option>
+
+                                                <option value="Private Service"  >Private Service</option>
+
+                                                <option value="Own Business or Own Practice"  >Own Business or Own
+                                                    Practice</option>
+
+                                                <option value="Government Service"  >Government Service</option>
+                                            </select>
+                                                                                    </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="occupation_details" class="col-sm-4 col-form-label">Occupation
+                                            Details
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="occupation_details"
+                                                name="occupation_details" placeholder="Occupation details" required value="">
+                                                                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="working_location" class="col-sm-4 col-form-label">Working
+                                            Location <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="working_location"
+                                                name="working_location" placeholder="Working location" required value="">
+                                                                                        </div>
+                                    </div>
+
+                                    <div class="form-group row in">
+                                        <label for="income" class="col-sm-4 col-form-label">Income (per
+                                            year) <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="income" name="income"
+                                                placeholder="Income" required value="">
+                                                                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 text-center in">
+                                    <button class="btn btn-outline-danger btn-sm font-weight-bold" type="button" data-toggle="collapse"
+                                        data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                        <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFour">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+        4 . Contact Details
+      </button>
+    </h2>
+    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="mobile" class="col-sm-4 col-form-label">Mobile
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="tel" class="form-control" name="mobile" id="mobile"
+                                                placeholder="Mobile" required maxlength="10" value="">
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="password" class="col-sm-4 col-form-label">Password for login
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="password" class="form-control" name="password" id="password"
+                                                placeholder="password"  value="">
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="alt_mobile" class="col-sm-4 col-form-label">Alternate
+                                            mobile  <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="tel" class="form-control" name="alt_mobile" id="alt_mobile"
+                                                placeholder="Alternate Mobile" required maxlength="10" value="">
+                                                                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="whatsapp" class="col-sm-4 col-form-label">Whatsapp
+                                            number <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="tel" class="form-control" id="whatsapp" name="whatsapp"
+                                                placeholder="Whatsapp" maxlength="10" value="">
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="email_id" class="col-sm-4 col-form-label">Email id
+                                            <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <input type="email" class="form-control" id="email_id" name="email_id"
+                                                placeholder="email id" value="">
+                                        </div>
+                                    </div>
+ 
+                                </div>
+                                <div class="col-md-6">
+                                    
+                                    <div class="form-group row in">
+                                        <label for="id_state" class="col-sm-4 col-form-label">State <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <select name="id_state" class="form-control" id="id_state" onchange="filter_city(this.value)">
+<option value="0">- Select state -</option>
+<option value="31">Andaman and Nicobar Islands</option>
+<option value="6">Andra Pradesh</option>
+<option value="7">Arunachal Pradesh</option>
+<option value="8">Assam</option>
+<option value="9">Bihar</option>
+<option value="32">Chandigarh</option>
+<option value="10">Chhattisgarh</option>
+<option value="33">Dadar and Nagar Haveli</option>
+<option value="34">Daman and Diu</option>
+<option value="35">Delhi</option>
+<option value="3">Goa</option>
+<option value="4">Gujarat</option>
+<option value="11">Haryana</option>
+<option value="12">Himachal Pradesh</option>
+<option value="13">Jammu and Kashmir</option>
+<option value="14">Jharkhand</option>
+<option value="2">Karnataka</option>
+<option value="15">Kerala</option>
+<option value="36">Lakshadweep</option>
+<option value="16">Madhya Pradesh</option>
+<option value="1">Maharashtra</option>
+<option value="17">Manipur</option>
+<option value="18">Meghalaya</option>
+<option value="19">Mizoram</option>
+<option value="20">Nagaland</option>
+<option value="21">Odisha</option>
+<option value="37">Pondicherry</option>
+<option value="22">Punjab</option>
+<option value="23">Rajasthan</option>
+<option value="24">Sikkim</option>
+<option value="25">Tamil Nadu</option>
+<option value="5">Telangana</option>
+<option value="27">Tripura</option>
+<option value="28">Uttar Pradesh</option>
+<option value="29">Uttarakhand</option>
+<option value="30">West Bengal</option>
+</select>
+                                                                                        </div>
+                                    </div>
+
+                                    <div class="form-group row in">
+                                        <label for="id_city" class="col-sm-4 col-form-label">District <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6" id="ajax_id_city">
+                                                                                        <select name="id_city" class="form-control" id="id_city">
+<option value="0">select district</option>
+</select>
+                                                                                        </div>
+                                    </div>
+                                 
+
+
+                                    <div class="form-group row in">
+                                        <label for="address" class="col-sm-4 col-form-label">Residence
+                                            address <span class="text-danger">*</span></label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="address" name="address"
+                                                placeholder="Residence address" rows="4" required></textarea>
+                                                                                        </div>
+                                    </div>
+
+                                    <div class="form-group row in">
+                                        <label for="id_proof" class="col-sm-4 col-form-label">PAN /
+                                            Aadhar / Driving
+                                            License / Passport No. </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="id_proof" name="id_proof"
+                                                placeholder="PAN / Aadhar / Driving License / Passport No."
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 text-center in">
+                                    <button class="btn btn-outline-danger btn-sm font-weight-bold" type="button" data-toggle="collapse"
+                                        data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                       <div class="accordion-item">
+    <h2 class="accordion-header" id="headingFive">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+        
+        5 . Family Details
+      </button>
+    </h2>
+    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                        <div class="card-body">
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="father" class="col-sm-4 col-form-label">Father
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="father" id="father">
+                                                <option>Father</option>
+                                                <option value="1"  >No</option>
+                                                <option value="2"  >Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="mother" class="col-sm-4 col-form-label">Mother
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="mother" id="mother">
+                                                <option>Mother</option>
+                                                <option value="1"  >No</option>
+                                                <option value="2"  >Yes</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="brothers" class="col-sm-4 col-form-label">Brothers
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="brothers" id="brothers">
+                                                <option>Brothers</option>
+                                                                                                <option value="0"   selected="selected" >0</option>
+                                                                                                <option value="1"   >1</option>
+                                                                                                <option value="2"   >2</option>
+                                                                                                <option value="3"   >3</option>
+                                                                                                <option value="4"   >4</option>
+                                                                                                <option value="5"   >5</option>
+                                                                                                <option value="6"   >6</option>
+                                                                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="married_brothers" class="col-sm-4 col-form-label">Married
+                                            Brothers </label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="married_brothers" id="married_brothers">
+                                                <option>Married Brothers</option>
+                                                                                                <option value="0"   selected="selected" >0</option>
+                                                                                                <option value="1"   >1</option>
+                                                                                                <option value="2"   >2</option>
+                                                                                                <option value="3"   >3</option>
+                                                                                                <option value="4"   >4</option>
+                                                                                                <option value="5"   >5</option>
+                                                                                                <option value="6"   >6</option>
+                                                                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="sisters" class="col-sm-4 col-form-label">Sisters
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" id="sisters" name="sisters">
+                                                <option>Sisters</option>
+                                                                                                <option value="0"   selected="selected" >0</option>
+                                                                                                <option value="1"   >1</option>
+                                                                                                <option value="2"   >2</option>
+                                                                                                <option value="3"   >3</option>
+                                                                                                <option value="4"   >4</option>
+                                                                                                <option value="5"   >5</option>
+                                                                                                <option value="6"   >6</option>
+                                                                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="married_sisters" class="col-sm-4 col-form-label">Married
+                                            Sisters </label>
+                                        <div class="col-sm-6">
+                                            <select class="form-control" name="married_sisters" id="married_sisters">
+                                                <option>Married Sisters</option>
+                                                                                                <option value="0"   selected="selected" >0</option>
+                                                                                                <option value="1"   >1</option>
+                                                                                                <option value="2"   >2</option>
+                                                                                                <option value="3"   >3</option>
+                                                                                                <option value="4"   >4</option>
+                                                                                                <option value="5"   >5</option>
+                                                                                                <option value="6"   >6</option>
+                                                                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="parents_full_name" class="col-sm-4 col-form-label">Parents
+                                            full name </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="parents_full_name"
+                                                name="parents_full_name" placeholder="Parents full name"
+                                                rows="4"></textarea>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="parents_occpation" class="col-sm-4 col-form-label">Parents
+                                            occupation
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="parents_occpation"
+                                                name="parents_occpation" placeholder="Parents occupation"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="family_wealth" class="col-sm-4 col-form-label">Family
+                                            Wealth / Estate
+                                            (e.g. Flat, Agri land.....etc) : </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="family_wealth"
+                                                name="family_wealth"
+                                                placeholder="Family Wealth / Estate (e.g. Flat, Agri land.....etc)"
+                                                rows="4"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row in">
+                                        <label for="relatives_surnames" class="col-sm-4 col-form-label">Relatives
+                                            Surname </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="relatives_surnames"
+                                                name="relatives_surnames" placeholder="Relatives surnames"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="mama_surname" class="col-sm-4 col-form-label">Mama’s
+                                            Surname / Place
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="mama_surname"
+                                                name="mama_surname" placeholder="Mama’s Surname / Place"
+                                                rows="3"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row ">
+                                <div class="col-md-12 text-center in">
+                                    <button class="btn btn-outline-danger btn-sm font-weight-bold" type="button" data-toggle="collapse"
+                                        data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Next
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                       <div class="accordion-item">
+    <h2 class="accordion-header" id="headingSix">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+       6 . Expectations
+      </button>
+    </h2>
+    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+
+                                    <div class="form-group row in">
+                                        <label for="expected_caste" class="col-sm-4 col-form-label">Expected
+                                            caste </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="expected_caste"
+                                                name="expected_caste" placeholder="Expected caste"  value=""/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="max_age_difference" class="col-sm-4 col-form-label">Max age
+                                            difference
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="max_age_difference"
+                                                name="max_age_difference" placeholder="Max age difference"  value=""/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="expected_height" class="col-sm-4 col-form-label">Expected
+                                            height </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="expected_height"
+                                                name="expected_height" placeholder="Expected height" value="" />
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="expected_mangal" class="col-sm-4 col-form-label">Mangal
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <input type="text" class="form-control" id="expected_mangal"
+                                                name="expected_mangal" placeholder="Mangal" value="" />
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group row in">
+                                        <label for="preferred_cities" class="col-sm-4 col-form-label">Preferred
+                                            cities </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="preferred_cities"
+                                                name="preferred_cities" placeholder="Preferred
+                                                        cities " rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row in">
+                                        <label for="expected_education" class="col-sm-4 col-form-label">Expected
+                                            education
+                                            </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="expected_education"
+                                                name="expected_education" placeholder="Expected education"
+                                                rows="2"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-group row in">
+                                        <label for="expected_occupation" class="col-sm-4 col-form-label">Expected
+                                            occupation &
+                                            income per year </label>
+                                        <div class="col-sm-6">
+                                            <textarea type="text" class="form-control" id="expected_occupation"
+                                                name="expected_occupation"
+                                                placeholder="Expected occupation & income per year" rows="2"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row ">
+                                <div class="col-md-12 text-center in">
+                                    <button type="submit" class="btn  btn-sm font-weight-bold" style="background-color:#ed502e; color: #fff; ">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+     </section>
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+   <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>Patankar Vivaah Sanstha</h3>
+              <p class="pb-3"><em></em></p>
+              <p>
+                2384, C Ward, Shanivar Peth, Sonya Maruti Chowk, Kolhapur. Pincode-416002<br><br>
+                <strong>Phone:</strong> 9421282827<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links" >
+            <h4 class="t">Useful Links</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right t"></i> <a href="index.html">Home</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="about.html">About us</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="terms.html">Terms</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="Contact.html">Contact</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="login.html">Login</a></li>
+              <li><i class="bx bx-chevron-right t"></i> <a href="inner-page.html">Register</a></li>
+            </ul>
+          </div>
+
+          
+
+          <div class="col-lg-5 col-md-6 footer-newsletter">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15286.17278554911!2d74.2210507!3d16.6997272!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1b08d2fa3b1b91dd!2sPatankar%20Vivah%20Sanstha!5e0!3m2!1sen!2sin!4v1644582305522!5m2!1sen!2sin" width="460" height="290" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span> Patankar Vivaah Sanstha</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/multi-responsive-bootstrap-template/ -->
+        Designed by <a href="https://www.revolutionit.in/" target="_blank">Revoution IT</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+<style type="text/css">
+  .t{
+    padding-left: 90px;
+  }
+   .in{
+    padding-top: 10px;
+  }
+</style>
+</body>
+
+</html>
